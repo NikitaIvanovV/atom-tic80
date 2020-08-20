@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle tic80-atom",
-        "command": "tic80-atom:toggle"
+        "label": "Run TIC-80",
+        "command": "tic80-atom:run"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "tic80-atom",
+          "label": "TIC-80 Atom",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "tic80-atom:toggle"
+              "label": "Run TIC-80",
+              "command": "tic80-atom:run"
             }
           ]
         }
