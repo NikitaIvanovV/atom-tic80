@@ -1,0 +1,18 @@
+{
+  "name": "tic80-atom",
+  "main": "./lib/tic80-atom",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "tic80-atom:toggle"
+  },
+  "repository": "https://github.com/atom/tic80-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle tic80-atom",
+        "command": "tic80-atom:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "tic80-atom",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "tic80-atom:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
