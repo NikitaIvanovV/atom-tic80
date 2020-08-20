@@ -2,13 +2,14 @@
   "name": "tic80-atom",
   "main": "./lib/tic80-atom",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Make and run TIC-80 games in Atom Editor",
   "keywords": [
+    "tic-80",
+    "tic80"
   ],
   "activationCommands": {
-    "atom-workspace": "tic80-atom:toggle"
   },
-  "repository": "https://github.com/atom/tic80-atom",
+  "repository": "https://github.com/ViChyavIn/tic80-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
