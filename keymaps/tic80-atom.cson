@@ -8,3 +8,15 @@ atom-text-editor[data-grammar="source wren"],
 atom-workspace atom-pane.pane[data-active-item-name$=".tic"]
 """:
   'ctrl-r': 'tic80:run-file'
+
+# If there is no installed language package,
+# rely on file extension.
+"""
+atom-workspace atom-pane.pane[data-active-item-name$=".tic"],
+atom-workspace atom-pane.pane[data-active-item-name$=".lua"],
+atom-workspace atom-pane.pane[data-active-item-name$=".js"],
+atom-workspace atom-pane.pane[data-active-item-name$=".moon"],
+atom-workspace atom-pane.pane[data-active-item-name$=".fnl"],
+atom-workspace atom-pane.pane[data-active-item-name$=".wren"]
+""":
+  'ctrl-r': 'tic80:run-file'
