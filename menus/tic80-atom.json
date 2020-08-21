@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Run TIC-80",
-        "command": "tic80-atom:run"
+        "command": "tic80:run"
       }
     ]
   },
@@ -16,7 +16,7 @@
           "submenu": [
             {
               "label": "Run TIC-80",
-              "command": "tic80-atom:run"
+              "command": "tic80:run"
             }
           ]
         }
