@@ -3,17 +3,7 @@ atom-text-editor[data-grammar="source lua"],
 atom-text-editor[data-grammar="source js"],
 atom-text-editor[data-grammar="source moon"],
 atom-text-editor[data-grammar="source fennel"],
-atom-text-editor[data-grammar="source wren"]
-""":
-  'ctrl-r': 'tic80:run-file'
-
-# If there is no installed language package, rely on file extension.
-"""
-atom-workspace atom-pane.pane[data-active-item-name$=".tic"],
-atom-workspace atom-pane.pane[data-active-item-name$=".lua"],
-atom-workspace atom-pane.pane[data-active-item-name$=".js"],
-atom-workspace atom-pane.pane[data-active-item-name$=".moon"],
-atom-workspace atom-pane.pane[data-active-item-name$=".fnl"],
-atom-workspace atom-pane.pane[data-active-item-name$=".wren"]
+atom-text-editor[data-grammar="source wren"],
+atom-workspace atom-pane.pane[data-active-item-name$=".tic"]
 """:
   'ctrl-r': 'tic80:run-file'
