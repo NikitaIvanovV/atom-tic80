@@ -2,8 +2,17 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Run TIC-80",
-        "command": "tic80:run"
+        "label": "TIC-80",
+        "submenu": [
+          {
+            "label": "Run TIC-80",
+            "command": "tic80:run"
+          },
+          {
+            "label": "Run file",
+            "command": "tic80:run-file"
+          }
+        ]
       }
     ]
   },
@@ -12,7 +21,7 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "TIC-80 Atom",
+          "label": "TIC-80",
           "submenu": [
             {
               "label": "Run TIC-80",
