@@ -1,0 +1,69 @@
+pathToExecutable:
+  title: 'Executable'
+  description: 'Path to TIC-80 executable.'
+  type: 'string'
+  default: 'tic80'
+  order: 1
+startUp:
+  type: 'object'
+  order: 2
+  properties:
+    fullscreen:
+      title: 'Start in fullscreen mode'
+      type: 'boolean'
+      default: false
+    skipStartUpAnimation:
+      title: 'Skip Start Up animation'
+      description: 'Note that running cart and code files always skips it.'
+      type: 'boolean'
+      default: true
+terminal:
+  type: 'object'
+  order: 3
+  properties:
+    enabled:
+      title: 'Enable'
+      description: 'TIC-80 console messages will be printed to a terminal right in the Atom.'
+      type: 'boolean'
+      default: true
+      order: 1
+    clearConsole:
+      title: 'Clear console'
+      description: 'Clear console from the old content on start up.'
+      type: 'boolean'
+      default: true
+    closeOnExit:
+      title: 'Close terminal'
+      description: 'Close terminal when TIC-80 is exitted.'
+      type: 'boolean'
+      default: false
+    greetingMessage:
+      title: 'Greeting message'
+      description: 'Print TIC-80 greeting message to terminal.'
+      type: 'boolean'
+      default: true
+    position:
+      description: 'Where to attach the terminal panel.'
+      type: 'string'
+      default: 'bottom'
+      enum: [
+        'top'
+        'bottom'
+        'left'
+        'right'
+      ]
+    maxHeight:
+      title: 'Initial height'
+      description: 'Initial height of terminal panel in px.'
+      type: 'integer'
+      default: 220
+      minimum: 170
+autocomplete:
+  type: 'object'
+  order: 4
+  properties:
+    enabled:
+      title: 'Enable'
+      description: 'Autocomplete feature for TIC-80 API. This setting will take effect after restarting.'
+      type: 'boolean'
+      default: true
