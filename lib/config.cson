@@ -17,6 +17,7 @@ startUp:
       description: 'Note that running cart and code files always skips it.'
       type: 'boolean'
       default: true
+
 terminal:
   type: 'object'
   order: 3
@@ -58,6 +59,7 @@ terminal:
       type: 'integer'
       default: 220
       minimum: 170
+
 autocomplete:
   type: 'object'
   order: 4
