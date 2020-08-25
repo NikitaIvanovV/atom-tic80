@@ -23,7 +23,7 @@ terminal:
   properties:
     enabled:
       title: 'Enable'
-      description: 'TIC-80 console messages will be printed to a terminal right in the Atom.'
+      description: 'TIC-80 console output will be printed to a terminal right in the Atom.'
       type: 'boolean'
       default: true
       order: 1
