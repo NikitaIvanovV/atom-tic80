@@ -73,6 +73,10 @@ The package also includes autocomplete feature for TIC's API.
 
 <!-- screenshot -->
 
+## Changelog
+
+Changelog can be found in the [CHANGELOG](CHANGELOG.md) file.
+
 ## License
 
 This project is licensed under the terms of MIT license, See the [LICENSE](LICENSE.md) file for more info.
