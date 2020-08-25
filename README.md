@@ -58,7 +58,7 @@ As an additional feature, with `Tic80: Create Project` you can create cart and c
 4. ...
 5. Done!
 
-<a name="save-code"></a> Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 3 (e. g. `save <your-game>.lua`).
+<a name="save-code">Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 3 (e. g. `save <your-game>.lua`).</a>
 
 <!-- screenshot -->
 
