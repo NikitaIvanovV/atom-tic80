@@ -72,3 +72,7 @@ The package can print TIC-80 console output to a terminal within Atom. You can t
 The package also includes autocomplete feature for TIC's API.
 
 <!-- screenshot -->
+
+## License
+
+This project is licensed under the terms of MIT license, See the [LICENSE](LICENSE.md) file for more info.
