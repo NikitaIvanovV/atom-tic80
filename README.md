@@ -3,6 +3,7 @@
 <big>Make and run [TIC-80](https://tic80.com/) games in [Atom](https://atom.io/)</big>
 
 ----
+
 <!-- This package for [Atom Editor](https://atom.io/) adds functionality to easily edit and run [TIC-80](https://tic80.com/) games. -->
 
 <!-- This customizable package for [Atom Editor](https://atom.io/) allows you to make and run [TIC-80](https://tic80.com/) games and print all the console output to a built-in terminal. -->
@@ -11,7 +12,7 @@
 * Prints TIC's console output in Atom's terminal
 * Provides autocomplete for TIC's API
 
-<!-- screenshot -->
+![Showcase](docs/media/showcase.gif)
 
 ## Installation
 
@@ -63,15 +64,16 @@ As an additional feature, with `Tic80: Create Project` you can create cart and c
 
 ### Terminal
 
-The package can print TIC-80 console output to a terminal within Atom. You can tweak its behavior and propetries in the package settings.
+The package can print TIC-80 console output to a terminal within Atom. You can tweak its behavior and properties in the package settings.
 
-<!-- screenshot -->
+![Terminal](docs/media/terminal.png)
 
-### Autocomplete
 
-The package also includes autocomplete feature for TIC's API.
+### Autocomplete and snippets
 
-<!-- screenshot -->
+The package also includes autocomplete feature for TIC's API and some handy snippets.
+
+![Autocomplete](docs/media/autocomplete.png)
 
 ## Changelog
 
