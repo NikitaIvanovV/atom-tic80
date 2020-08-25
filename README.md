@@ -23,7 +23,7 @@ Or:
 2. Search for `atom-tic80`
 3. Click "Install"
 
-## [Usage](#usage)
+## Usage
 
 All commands can be ran via [Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette). If you open it by pressing `Ctrl+Shift+P` and type `tic80`, you will see all the available commands.
 
