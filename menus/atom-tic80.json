@@ -26,6 +26,10 @@
             {
               "label": "Run TIC-80",
               "command": "tic80:run"
+            },
+            {
+              "label": "Run TIC-80 File",
+              "command": "tic80:run-file"
             }
           ]
         }
