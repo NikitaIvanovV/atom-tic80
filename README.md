@@ -12,7 +12,7 @@
 * Prints TIC's console output in Atom's terminal
 * Provides autocomplete and snippets for TIC's API
 
-![Showcase](docs/media/showcase.gif)
+![Showcase](https://user-images.githubusercontent.com/51688199/91285388-96dee980-e7a6-11ea-840f-44fee158a08a.gif)
 
 ## Installation
 
@@ -66,14 +66,14 @@ As an additional feature, with `Tic80: Create Project` you can create cart and c
 
 The package can print TIC-80 console output to a terminal within Atom. You can tweak its behavior and properties in the package settings.
 
-![Terminal](docs/media/terminal.png)
+![Terminal](https://user-images.githubusercontent.com/51688199/91285403-9b0b0700-e7a6-11ea-9533-67eecaf708c2.png)
 
 
 ### Autocomplete and snippets
 
 The package also includes autocomplete feature for TIC's API and some handy snippets.
 
-![Autocomplete](docs/media/autocomplete.png)
+![Autocomplete](https://user-images.githubusercontent.com/51688199/91285376-95152600-e7a6-11ea-930d-e2aabddad208.png)
 
 ## Changelog
 
