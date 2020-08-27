@@ -1,5 +1,5 @@
-## 0.2.1
-* Added "Create Project" to menus
+## 0.3.0
+* Updated menus with "Create Project" command
 
 ## 0.2.0
 * Major fixes and improvements to `Create Project` command
