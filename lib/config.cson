@@ -4,6 +4,7 @@ pathToExecutable:
   type: 'string'
   default: 'tic80'
   order: 1
+
 startUp:
   type: 'object'
   order: 2

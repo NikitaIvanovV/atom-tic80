@@ -56,13 +56,15 @@ As an additional feature, with `Tic80: Create Project` you can create cart and c
 
 1. Run `Tic80: Create Project` command
 2. Choose folder
-3. When TIC-80 console pops up, run `save <your-game>`
-4. ...
-5. Done!
+3. Wait for TIC-80 to open
+4. *(optional)* Run `new [js]` if you want to use a language different from Lua
+5. Run `save <your-game>`
+6. ...
+7. Done!
 
 ##### All-in-one file
 
-Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 3 (e. g. `save <your-game>.lua`).
+Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 5 (e. g. `save <your-game>.lua`).
 
 <!-- screenshot -->
 
