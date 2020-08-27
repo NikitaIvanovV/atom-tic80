@@ -44,7 +44,7 @@ The same command can also run .tic files. However, it's not recommended to edit 
 
 ##### Game assets
 
-Sprites, tiles, music and other game assets, should be stored in a separate file with .tic extension that should be named the same way and moved into the same directory as your code file (e. g. `dir/game.lua` and `dir/game.tic`).
+Sprites, tiles, music and other game assets, should be stored in a separate file with .tic extension that should be named the same way and moved into the same directory as your code file (e.g. `dir/game.lua` and `dir/game.tic`).
 
 However, it's possible to have everything in one file ([read](#all-in-one-file)).
 
@@ -57,14 +57,14 @@ As an additional feature, with `Tic80: Create Project` you can create cart and c
 1. Run `Tic80: Create Project` command
 2. Choose folder
 3. Wait for TIC-80 to open
-4. *(optional)* Run `new [js]` if you want to use a language different from Lua
+4. *(optional)* Run `new [language]` if you want to use a language different from Lua (e.g. `new js`)
 5. Run `save <your-game>`
 6. ...
 7. Done!
 
 ##### All-in-one file
 
-Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 5 (e. g. `save <your-game>.lua`).
+Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 5 (e.g. `save <your-game>.lua`).
 
 <!-- screenshot -->
 
