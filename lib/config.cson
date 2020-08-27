@@ -5,7 +5,8 @@ pathToExecutable:
   default: 'tic80'
   order: 1
 
-startUp:
+tic80:
+  title: 'TIC-80'
   type: 'object'
   order: 2
   properties:
@@ -16,6 +17,11 @@ startUp:
     skipStartUpAnimation:
       title: 'Skip Start Up animation'
       description: 'Note that running cart and code files always skips it.'
+      type: 'boolean'
+      default: true
+    watch:
+      title: 'Watch code'
+      description: "If you save an edit in Atom while TIC is open, it will load the updated code."
       type: 'boolean'
       default: true
 
