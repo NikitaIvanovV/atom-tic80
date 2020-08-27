@@ -1,3 +1,6 @@
+## 0.2.1
+* Added "Create Project" to menus
+
 ## 0.2.0
 * Major fixes and improvements to `Create Project` command
   * Allows to specify a language ([read how](README.md#how-to-make-one))
