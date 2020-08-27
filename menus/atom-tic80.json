@@ -11,6 +11,10 @@
           {
             "label": "Run file",
             "command": "tic80:run-file"
+          },
+          {
+            "label": "Create project",
+            "command": "tic80:create-project"
           }
         ]
       }
@@ -30,6 +34,10 @@
             {
               "label": "Run TIC-80 File",
               "command": "tic80:run-file"
+            },
+            {
+              "label": "Create project",
+              "command": "tic80:create-project"
             }
           ]
         }
