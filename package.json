@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.2.0",
   "name": "atom-tic80",
   "main": "./lib/atom-tic80",
   "description": "Make and run TIC-80 games in Atom",
