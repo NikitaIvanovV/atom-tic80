@@ -1,3 +1,6 @@
+## 0.3.1
+* Added "Open settings" button to executable-not-found notification
+
 ## 0.3.0
 * Updated menus with "Create Project" command
 
