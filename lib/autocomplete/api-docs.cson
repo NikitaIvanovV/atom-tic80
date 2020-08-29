@@ -183,7 +183,7 @@ print:
 
 rect:
   description: "Draws a filled rectangle of the desired size and color at the specified position."
-  snippet: 'rectb(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:color})'
+  snippet: 'rect(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:color})'
 
 rectb:
   description: "Draws a one pixel thick rectangle border of the desired size and color at the specified position."
