@@ -14,6 +14,11 @@ tic80:
       title: 'Start in fullscreen mode'
       type: 'boolean'
       default: false
+    restart:
+      title: 'Restart'
+      description: "If TIC-80 is already running and one attempts to run another instance, the old process is terminated."
+      type: 'boolean'
+      default: true
     skipStartUpAnimation:
       title: 'Skip Start Up animation'
       description: 'Note that running cart and code files always skips it.'
