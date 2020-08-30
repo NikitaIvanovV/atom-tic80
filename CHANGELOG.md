@@ -1,3 +1,7 @@
+## 0.4.0
+* Added option to restart TIC instead of creating a new instance when `Run` or `Run File` commands are called
+* Fixed typo in `rect` autocomplete snippet (thanks to [@Josh Farquhar](https://github.com/joshfarquhar))
+
 ## 0.3.1
 * Added "Open settings" button to executable-not-found notification
 
