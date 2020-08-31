@@ -30,7 +30,7 @@ All commands can be ran via [Command Palette](https://flight-manual.atom.io/gett
 
 ### Run
 
-`Tic80: Run` command simply runs TIC-80. Although, it's not that simple because Atom needs to know how to run do it.
+`Tic80: Run` command simply runs TIC-80. Although, it's not that simple because Atom needs to know how to run it.
 
 Try out the command: if it fails, go to the package settings and set proper path to your TIC-80 executable file.
 
