@@ -24,11 +24,6 @@ tic80:
       description: 'Note that running cart and code files always skips it.'
       type: 'boolean'
       default: true
-    watch:
-      title: 'Watch code'
-      description: "If you save an edit in Atom while TIC is open, it will load the updated code."
-      type: 'boolean'
-      default: true
 
 terminal:
   type: 'object'
