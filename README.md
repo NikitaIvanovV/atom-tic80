@@ -4,15 +4,15 @@
 
 ----
 
-<!-- This package for [Atom Editor](https://atom.io/) adds functionality to easily edit and run [TIC-80](https://tic80.com/) games. -->
-
-<!-- This customizable package for [Atom Editor](https://atom.io/) allows you to make and run [TIC-80](https://tic80.com/) games and print all the console output to a built-in terminal. -->
-
 * Allows you to run and make games within Atom
 * Prints TIC's console output in Atom's terminal
 * Provides autocomplete and snippets for TIC's API
 
 ![Showcase](https://user-images.githubusercontent.com/51688199/91285388-96dee980-e7a6-11ea-840f-44fee158a08a.gif)
+
+## Important information
+* Supported TIC-80 versions: >=0.90.0
+* In order to get benefit from most of the package features, you need to have [TIC-80 Pro Version](https://github.com/nesbox/TIC-80#pro-version)
 
 ## Installation
 
@@ -36,37 +36,19 @@ Try out the command: if it fails, go to the package settings and set proper path
 
 ### Run file
 
-##### Basics
+#### Running raw code files
 
-Using `Tic80: Run File` you can make your games right in Atom! Write some code, save it as .lua (or .js or whatever TIC-80 supports) and press `Ctrl+R` (the command has a handy keybinding!).
+Using `Tic80: Run File` you can make your games right in Atom! Write some code, save it as .lua file (or .js or whatever TIC-80 supports) and press `Ctrl+R` (the command has a handy keybinding!).
 
-The same command can also run .tic files. However, it's not recommended to edit them using Atom (or any other external text editor) because chances are this action will corrupt the files.
+After running the command, the essential [cartridge metadata](https://github.com/nesbox/TIC-80/wiki/the-code#cartridge-metadata) will be added at the top of your file if it's not already present.
 
-##### Game assets
+#### Running .tic files
 
-Sprites, tiles, music and other game assets, should be stored in a separate file with .tic extension that should be named the same way and moved into the same directory as your code file (e.g. `dir/game.lua` and `dir/game.tic`).
-
-However, it's possible to have everything in one file ([read](#all-in-one-file)).
+The same command can also run `.tic` files. However, it's not recommended to edit them using Atom (or any other external text editor) because chances are this action will corrupt the files.
 
 ### Project
 
-##### How to make one
-
-As an additional feature, with `Tic80: Create Project` you can create cart and code files in a preferred folder and start making games straight away!
-
-1. Run `Tic80: Create Project` command
-2. Choose folder
-3. Wait for TIC-80 to open
-4. *(optional)* Run `new [language]` if you want to use a language different from Lua (e.g. `new js`)
-5. Run `save <your-game>`
-6. ...
-7. Done!
-
-##### All-in-one file
-
-Since 0.80.0, using TIC's PRO-version, you can save cart files as code files. If you want to keep both code and game assets in a single file, specify extension in step 5 (e.g. `save <your-game>.lua`).
-
-<!-- screenshot -->
+As an additional feature, with `Tic80: Create Project` command you can pick a folder, choose a language and create a cart in it. The created file will be opened in a new window.
 
 ### Terminal
 
