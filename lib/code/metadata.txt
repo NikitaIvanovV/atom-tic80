@@ -1,0 +1,4 @@
+{comment} title:  game title
+{comment} author: game developer
+{comment} desc:   short description
+{comment} script: {language}
