@@ -1,4 +1,5 @@
 tic:
+  type: 'other'
   displayText:
     lua: 'function TIC()'
     js: 'function TIC()'
@@ -39,6 +40,7 @@ tic:
       """
 
 scn:
+  type: 'other'
   displayText:
     lua: 'function SCN()'
     js: 'function SCN()'
@@ -79,6 +81,7 @@ scn:
       """
 
 ovr:
+  type: 'other'
   displayText:
     lua: 'function OVR()'
     js: 'function OVR()'
@@ -121,12 +124,12 @@ ovr:
 
 btn:
   description: "Allows you to read the status of one of the buttons attached to TIC."
-  snippet: 'btn(${1:id})'
+  args: ['id']
   returns: 'Boolean'
 
 btnp:
   description: "Allows you to read the status of one of the buttons attached to TIC. It returns true only if the key has been pressed since the last frame."
-  snippet: 'btnp(${1:id}, ${2:[hold]}, ${3:[period]})'
+  args: ['id', '[hold]', '[period]']
   returns: 'Boolean'
 
 clip:
@@ -136,73 +139,71 @@ clip:
 
     Calling clip() with no parameters will reset the drawing area to the entire screen.
     """
-  snippet: 'clip(${1:x}, ${2:y}, ${3:w}, ${4:h})'
+  args: ['x', 'y', 'w', 'h']
 
 cls:
   description: "Clears the entire screen using the color argument. If no parameter is passed, index 0 of the palette is used."
-  snippet: 'cls(${1:color})'
+  args: ['color']
 
 circ:
   description: "Draws a filled circle of the desired radius and color with its center at x, y."
-  snippet: 'circ(${1:x}, ${2:y}, ${3:radius}, ${4:color})'
+  args: ['x', 'y', 'radius', 'color']
 
 circb:
   description: "Draws the circumference of a circle with its center at x, y using the radius and color requested."
-  snippet: 'circb(${1:x}, ${2:y}, ${3:radius}, ${4:color})'
+  args: ['x', 'y', 'radius', 'color']
 
 exit:
-  text: 'exit()'
   description: "Interrupts program execution and returns to the console when the TIC function ends."
 
 fget:
   description: "Returns true if the specified flag of the sprite is set."
-  snippet: 'fget(${1:sprite}, ${2:flag})'
+  args: ['sprite', 'flag']
   returns: 'Boolean'
   version: '0.80.0'
 
 font:
   description: "Draw text to the screen using sprites from the foreground sprite-sheet for the font."
-  snippet: 'font(${1:text}, ${2:x}, ${3:y}, ${4:colorKey}, ${5:charWidth}, ${6:charHeight}, ${7:fixed}, ${8:scale})'
+  args: ['text', 'x', 'y', 'colorKey', 'charWidth', 'charHeight', 'fixed', 'scale']
   returns: 'width'
 
 fset:
   description: "Sets the flag to the sprite."
-  snippet: 'fset(${1:index}, ${2:flag}, ${3:bool})'
+  args: ['index', 'flag', 'bool']
   version: '0.80.0'
 
 key:
   description: "The function returns true if the key denoted by keycode is pressed."
-  snippet: 'key(${1:code})'
+  args: ['code']
   version: '0.60.3'
 
 keyp:
   description: "This function returns true if the given key is pressed but wasn't pressed in the previous frame."
-  snippet: 'keyp(${1:id}, ${2:[hold]}, ${3:[period]})'
+  args: ['id', '[hold]', '[period]']
   version: '0.60.3'
 
 line:
   description: "Draws a straight line from point (x0, y0) to point (x1, y1) of the specified color."
-  snippet: 'line(${1:x0}, ${2:y0}, ${3:x1}, ${4:y1}, ${5:color})'
+  args: ['x0', 'y0', 'x1', 'y1', 'color']
 
 map:
   description: "Draw the desired area of the map to the specified screen position."
-  snippet: 'map(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:screenX}, ${6:screenY}, ${7:color}, ${8:scale}, ${9:remap})'
+  args: ['x', 'y', 'width', 'height', 'screenX', 'screenY', 'color', 'scale', 'remap']
 
 memcpy:
   description: "Allows you to copy a continuous block of TIC's 64k RAM from one address to another."
-  snippet: 'memcpy(${1:to}, ${2:from}, ${3:length})'
+  args: ['to', 'from', 'length']
 
 memset:
   description: "This function allows you to set a continuous block of any part of TIC's RAM to the same value."
-  snippet: 'memset(${1:address}, ${2:value}, ${3:length})'
+  args: ['address', 'value', 'length']
 
 mget:
   description: "Returns the sprite ID at the given x and y map coordinate."
-  snippet: 'mget(${1:x}, ${2:y})'
+  args: ['x', 'y']
   returns: 'Sprite ID'
 
 mouse:
-  text: 'mouse()'
   description: "Returns the mouse coordinates and a boolean value for the state of each mouse button, with true indicating that a button is pressed."
   returns:
     lua: 'List'
@@ -213,86 +214,83 @@ mouse:
 
 mset:
   description: "Changes the sprite at the specified map coordinates."
-  snippet: 'mset(${1:x}, ${2:y}, ${3:sprite})'
+  args: ['x', 'y', 'sprite']
 
 music:
   description: "Starts playing a track created in the Music Editor. Call without arguments to stop the music."
-  snippet: 'music(${1:track}, ${2:frame}, ${3:row}, ${4:loop}, ${5:sustain})'
+  args: ['track', 'frame', 'row', 'loop', 'sustain']
 
 peek:
   description: "Returns a byte stored in TIC's RAM."
-  snippet: 'peek(${1:address})'
+  args: ['address']
   returns: 'Integer'
 
 peek4:
   description: "Returns a 4-bit value stored in TIC's RAM."
-  snippet: 'peek4(${1:address4})'
+  args: ['address4']
   returns: 'Integer'
 
 pix:
   description: "Reads or writes pixel color values."
-  snippet: 'pix(${1:x}, ${2:y}, ${3:[color]})'
+  args: ['x', 'y', '[color]']
   returns: 'color'
 
 pmem:
   description: "Saves and retrieves data in one of the 256 individual 32-bit slots available in the cartridge's persistent memory."
-  snippet: 'pmem(${1:index}, ${2:[value]})'
+  args: ['index', '[value]']
   returns: 'value'
 
 poke:
   description: "Writes a single byte to any address in TIC's RAM."
-  snippet: 'poke(${1:address}, ${2:value})'
+  args: ['address', 'value']
 
 poke4:
   description: "Writes a 4-bit value to any address in TIC's RAM."
-  snippet: 'poke4(${1:address4}, ${2:value})'
+  args: ['address4', 'value']
 
 print:
   displayText: 'print(text, [x=0], [y=0], [color=15], [fixed=false], [scale=1], [smallfont=false])'
   description: "Print text to the screen using the font defined in config."
-  snippet: 'print(${1:string}, ${2:[x]}, ${3:[y]})'
+  args: ['string', '[x]', '[y]']
   returns: 'width'
 
 rect:
   description: "Draws a filled rectangle of the desired size and color at the specified position."
-  snippet: 'rect(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:color})'
+  args: ['x', 'y', 'width', 'height', 'color']
 
 rectb:
   description: "Draws a one pixel thick rectangle border of the desired size and color at the specified position."
-  snippet: 'rectb(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:color})'
+  args: ['x', 'y', 'width', 'height', 'color']
 
 reset:
-  text: 'reset()'
   description: "Resets the cartridge."
   version: '0.60.0'
 
 sfx:
   displayText: 'sfx(id, [note], [duration=-1], [channel=0], [volume=15], [speed=0])'
   description: "Plays the sound with ID created in the SFX Editor."
-  snippet: 'sfx(${1:id})'
+  args: ['id']
 
 spr:
   displayText: 'spr(id, x, y, [colorkey=-1], [scale=1], [flip=0], [rotate=0], [width=1], [height=1])'
   description: "Draws the sprite on the screen."
-  snippet: 'spr(${1:id}, ${2:x}, ${3:y})'
+  args: ['id', 'x', 'y']
 
 spr:
   displayText: 'spr(id, x, y, [colorkey=-1], [scale=1], [flip=0], [rotate=0], [width=1], [height=1])'
   description: "Draws the sprite on the screen."
-  snippet: 'spr(${1:id}, ${2:x}, ${3:y})'
+  args: ['id', 'x', 'y']
 
 sync:
   description: "Switches between banks or saves current assets to a bank."
-  snippet: 'sync(${1:mask}, ${2:bank}, ${3:toCart})'
+  args: ['mask', 'bank', 'toCart']
   version: '0.60.0'
 
 time:
-  text: 'time()'
   description: "Returns the number of milliseconds elapsed since the cartridge began execution."
   returns: 'Integer'
 
 tstamp:
-  text: 'tstamp()'
   description: "Returns the number of seconds elapsed since January 1st, 1970."
   returns: 'Integer'
   version: '0.80.0'
@@ -300,18 +298,18 @@ tstamp:
 trace:
   displayText: 'trace(message, color)'
   description: "Prints the message to the console."
-  snippet: 'trace(${1:message})'
+  args: ['message']
 
 trace:
   displayText: 'trace(message, color)'
   description: "Prints the message to the console."
-  snippet: 'trace(${1:message})'
+  args: ['message']
 
 tri:
   description: "Draws a triangle filled with color, using the supplied vertices."
-  snippet: 'tri(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:color})'
+  args: ['x1', 'y1', 'x2', 'y2', 'x3', 'y3', 'color']
 
 textri:
   description: "Renders a triangle filled with texture from sprite or map RAM."
-  snippet: 'textri(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:u1}, ${8:v1}, ${9:u2}, ${10:v2}, ${11:u3}, ${12:v3})'
+  args: ['x1', 'y1', 'x2', 'y2', 'x3', 'y3', 'u1', 'v1', 'u2', 'v2', 'u3', 'v3']
   version: '0.46.0'
