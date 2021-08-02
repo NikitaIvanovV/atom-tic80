@@ -276,11 +276,6 @@ spr:
   description: "Draws the sprite on the screen."
   args: ['id', 'x', 'y']
 
-spr:
-  displayText: 'spr(id, x, y, [colorkey=-1], [scale=1], [flip=0], [rotate=0], [width=1], [height=1])'
-  description: "Draws the sprite on the screen."
-  args: ['id', 'x', 'y']
-
 sync:
   description: "Switches between banks or saves current assets to a bank."
   args: ['mask', 'bank', 'toCart']
@@ -294,11 +289,6 @@ tstamp:
   description: "Returns the number of seconds elapsed since January 1st, 1970."
   returns: 'Integer'
   version: '0.80.0'
-
-trace:
-  displayText: 'trace(message, color)'
-  description: "Prints the message to the console."
-  args: ['message']
 
 trace:
   displayText: 'trace(message, color)'
