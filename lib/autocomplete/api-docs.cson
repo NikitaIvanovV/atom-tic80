@@ -1,51 +1,120 @@
 tic:
-  displayText: 'function TIC()'
+  displayText:
+    lua: 'function TIC()'
+    js: 'function TIC()'
+    moon: 'export TIC=->'
+    wren: 'TIC()'
+    squirrel: 'function TIC()'
   description: "TIC() is the \"main\" function and must be present in every program. It takes no parameters and is called sixty times per second (60fps)."
   snippet:
-    'source.lua':
+    lua:
       """
       function TIC()
         ${1:-- Put your stuff here}
       end
       """
-    'source.js':
+    js:
       """
       function TIC() {
         ${1:// Put your stuff here}
       }
       """
+    moon:
+      """
+      export TIC=->
+      	${1:-- Put your stuff here}
+      """
+    wren:
+      """
+      TIC(){
+    		${1:// Put your stuff here}
+    	}
+      """
+    squirrel:
+      """
+      function TIC()
+      {
+        ${1:// Put your stuff here}
+      }
+      """
 
 scn:
-  displayText: 'function SCN()'
+  displayText:
+    lua: 'function SCN()'
+    js: 'function SCN()'
+    moon: 'export SCN=->'
+    wren: 'SCN()'
+    squirrel: 'function SCN()'
   description: "SCN() allows you to execute code between the drawing of each scan line, for example, to manipulate the palette."
   snippet:
-    'source.lua':
+    lua:
       """
       function SCN(line)
         ${1:-- Put your stuff here}
       end
       """
-    'source.js':
+    js:
       """
       function SCN(line) {
         ${1:// Put your stuff here}
       }
       """
+    moon:
+      """
+      export SCN=(line)->
+      	${1:-- Put your stuff here}
+      """
+    wren:
+      """
+      SCN(line){
+    		${1:// Put your stuff here}
+    	}
+      """
+    squirrel:
+      """
+      function SCN(line)
+      {
+        ${1:// Put your stuff here}
+      }
+      """
 
 ovr:
-  displayText: 'function OVR()'
+  displayText:
+    lua: 'function OVR()'
+    js: 'function OVR()'
+    moon: 'export OVR=->'
+    wren: 'OVR()'
+    squirrel: 'function OVR()'
   description: "OVR() is called on every frame. It draws on a separate layer and can be used together with SCN() to create separate background or foreground layers and other visual effects."
   snippet:
-    'source.lua':
+    lua:
       """
       function OVR()
-        ${1:--Draw foreground}
+        ${1:-- Put your stuff here}
       end
       """
-    'source.js':
+    js:
       """
       function OVR() {
-        ${1:// --Draw foreground}
+        ${1:// Put your stuff here}
+      }
+      """
+    moon:
+      """
+      export OVR=->
+      	${1:-- Put your stuff here}
+      """
+    wren:
+      """
+      OVR(){
+    		${1:// Put your stuff here}
+    	}
+      """
+    squirrel:
+      """
+      function OVR()
+      {
+        ${1:// Put your stuff here}
       }
       """
   version: '0.60.0'
@@ -136,8 +205,11 @@ mouse:
   text: 'mouse()'
   description: "Returns the mouse coordinates and a boolean value for the state of each mouse button, with true indicating that a button is pressed."
   returns:
-    'source.lua': 'List'
-    'source.js': 'Array'
+    lua: 'List'
+    js: 'Array'
+    moon: 'List'
+    wren: 'List'
+    squirrel: 'Array'
 
 mset:
   description: "Changes the sprite at the specified map coordinates."
