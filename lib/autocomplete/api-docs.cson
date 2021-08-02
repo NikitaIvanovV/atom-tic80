@@ -249,9 +249,8 @@ poke4:
   args: ['address4', 'value']
 
 print:
-  displayText: 'print(text, [x=0], [y=0], [color=15], [fixed=false], [scale=1], [smallfont=false])'
   description: "Print text to the screen using the font defined in config."
-  args: ['string', '[x]', '[y]']
+  args: ['string', 'x', 'y']
   returns: 'width'
 
 rect:
@@ -267,12 +266,10 @@ reset:
   version: '0.60.0'
 
 sfx:
-  displayText: 'sfx(id, [note], [duration=-1], [channel=0], [volume=15], [speed=0])'
   description: "Plays the sound with ID created in the SFX Editor."
   args: ['id']
 
 spr:
-  displayText: 'spr(id, x, y, [colorkey=-1], [scale=1], [flip=0], [rotate=0], [width=1], [height=1])'
   description: "Draws the sprite on the screen."
   args: ['id', 'x', 'y']
 
@@ -291,7 +288,6 @@ tstamp:
   version: '0.80.0'
 
 trace:
-  displayText: 'trace(message, color)'
   description: "Prints the message to the console."
   args: ['message']
 
