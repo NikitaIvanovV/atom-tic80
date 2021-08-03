@@ -1,3 +1,6 @@
+## 0.5.0
+* Add Squirrel compatibility (thanks to [@Kikasuru](https://github.com/Kikasuru))
+
 ## 0.4.0
 * Added option to restart TIC instead of creating a new instance when `Run` or `Run File` commands are called
 * Fixed typo in `rect` autocomplete snippet (thanks to [@Josh Farquhar](https://github.com/joshfarquhar))
