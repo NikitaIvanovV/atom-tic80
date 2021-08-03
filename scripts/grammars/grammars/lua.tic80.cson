@@ -1,0 +1,18 @@
+scopeName: 'source.lua.tic80'
+name: 'Lua TIC-80'
+fileTypes: ['lua']
+injections:
+  'L:source.lua':
+    patterns: [
+      {
+        'include': '#api'
+      }
+    ]
+patterns: [
+  {
+    include: '#other'
+  }
+  {
+    include: 'source.lua'
+  }
+]

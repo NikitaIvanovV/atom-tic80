@@ -5,13 +5,19 @@
   "description": "Make and run TIC-80 games in Atom",
   "keywords": [
     "tic-80",
-    "tic80"
+    "tic80",
+    "syntax",
+    "grammar"
   ],
   "activationCommands": {},
   "repository": "https://github.com/ViChyavIn/atom-tic80",
   "license": "MIT",
   "engines": {
     "atom": ">=1.13.0 <2.0.0"
+  },
+  "scripts": {
+    "generate-grammars": "babel-node scripts/grammars/generate.js",
+    "update-docs": "npm run generate-grammars"
   },
   "dependencies": {
     "atom-message-panel": ">=1.3.1",
@@ -29,5 +35,10 @@
         "4.0.0": "provideAutocomplete"
       }
     }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.14.9"
   }
 }

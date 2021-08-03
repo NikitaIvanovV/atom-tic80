@@ -1,0 +1,22 @@
+scopeName: 'source.wren.tic80'
+name: 'Wren TIC-80'
+fileTypes: ['wren']
+injections:
+  'L:source.moon':
+    patterns: [
+      {
+        'include': '#api'
+      }
+    ]
+patterns: [
+  {
+    name: 'support.class.library.wren.tic80',
+    match: '\\bTIC\\b'
+  }
+  {
+    include: '#other'
+  }
+  {
+    include: 'source.wren'
+  }
+]

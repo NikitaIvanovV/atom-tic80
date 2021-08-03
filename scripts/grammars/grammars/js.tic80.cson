@@ -1,0 +1,18 @@
+scopeName: 'source.js.tic80'
+name: 'JavaScript TIC-80'
+fileTypes: ['js']
+injections:
+  'L:source.js':
+    patterns: [
+      {
+        include: '#api'
+      }
+    ]
+patterns: [
+  {
+    include: '#other'
+  }
+  {
+    include: 'source.js'
+  }
+]
