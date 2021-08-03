@@ -125,7 +125,7 @@ async function generateGrammar(apiDocs, fileName, dir) {
 }
 
 async function main() {
-  const apiDocsPath = path.join(rootPath, 'lib', 'autocomplete', 'api-docs.cson');
+  const apiDocsPath = path.join(rootPath, 'lib', 'api-docs.cson');
 
   const apiDocs = getApiDocs(apiDocsPath);
 
