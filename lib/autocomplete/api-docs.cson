@@ -299,3 +299,23 @@ textri:
   description: "Renders a triangle filled with texture from sprite or map RAM."
   args: ['x1', 'y1', 'x2', 'y2', 'x3', 'y3', 'u1', 'v1', 'u2', 'v2', 'u3', 'v3']
   version: '0.46.0'
+  
+elli:
+  description: "Draws a filled ellipse of the desired radiuses a b and color with its center at x, y."
+  args: ['x', 'y', 'a', 'b', 'color']
+  version: '0.90.0'
+
+ellib:
+  description: "Draws an ellipse border with the desired radiuses a b and color with its center at x, y."
+  args: ['x', 'y', 'a', 'b', 'color']
+  version: '0.90.0'
+
+tri:
+  description: "Draws a triangle filled with color, using the supplied vertices."
+  args: ['x1', 'y1', 'x2', 'y2', 'x3', 'y3', 'color']
+  version: '0.90.0'
+
+trib:
+  description: "Draws a triangle border with color, using the supplied vertices."
+  args: ['x1', 'y1', 'x2', 'y2', 'x3', 'y3', 'color']
+  version: '0.90.0'
