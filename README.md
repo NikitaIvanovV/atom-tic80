@@ -6,13 +6,15 @@
 
 * Allows you to run and make games within Atom
 * Prints TIC's console output in Atom's terminal
-* Provides autocomplete and snippets for TIC's API
+* Provides autocomplete, syntax and snippets for TIC's API
+* highlights some syntax
 
 ![Showcase](https://user-images.githubusercontent.com/51688199/91285388-96dee980-e7a6-11ea-840f-44fee158a08a.gif)
 
-## Important information
-* Supported TIC-80 versions: >=0.90.0
-* In order to get benefit from most of the package features, you need to have [TIC-80 Pro Version](https://github.com/nesbox/TIC-80#pro-version)
+## Requirements
+* TIC-80: **0.90.0 and above**
+  * In order to get benefit from all the package features, you need to have [TIC-80 Pro Version](https://github.com/nesbox/TIC-80#pro-version)
+* Atom package [`atom-ide-datatip`](https://atom.io/packages/atom-ide-datatip)
 
 ## Installation
 
@@ -57,15 +59,19 @@ The package can print TIC-80 console output to a terminal within Atom. You can t
 ![Terminal](https://user-images.githubusercontent.com/51688199/91285403-9b0b0700-e7a6-11ea-9533-67eecaf708c2.png)
 
 
-### Autocomplete and snippets
+### Autocomplete, snippets and highlighting
 
-The package also includes autocomplete feature for TIC's API and some handy snippets.
+The package also includes autocomplete feature for TIC's API and some handy snippets + highlighting.
 
 ![Autocomplete](https://user-images.githubusercontent.com/51688199/91285376-95152600-e7a6-11ea-930d-e2aabddad208.png)
 
+Note: they work only if you have your current file grammar set to TIC-80 version. It's done to prevent those things from appearing in regular code when you don't actually make games for TIC-80. Usually the grammar is set automatically but if it's not, just [set it yourself](https://flight-manual.atom.io/using-atom/sections/grammar/).
+
+![Set Tic-80 grammar](https://user-images.githubusercontent.com/51688199/128045487-32145331-ff07-47ee-a411-1937f4d4d63a.png)
+
 ## Changelog
 
-Changelog can be found in the [CHANGELOG](CHANGELOG.md) file.
+Changelog can be found in the [CHANGELOG](CHANGELOG.md) or on [GitHub](https://github.com/ViChyavIn/atom-tic80/releases) file.
 
 ## License
 
