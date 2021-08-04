@@ -77,14 +77,14 @@ function generateAPIFunctionsGrammar(patterns, apiDocs, language) {
     case ticLanguages.Squirrel:
       for (const [name, apiEntry] of Object.entries(apiDocs)) {
         patterns.push({
-          name: `support.function.library.${language.ticName}.tic80`,
+          name: `support.function.library.${language.ticName}.tic80.${name}`,
           ...getFunctionMatchObject(name, apiEntry, language)
         });
       }
       break;
     case ticLanguages.Moon:
     case ticLanguages.Wren:
-      // Don't add API highlightings to Moon and Wren
+      // Don't add grammars for Moon and Wren
       break;
     default:
       throw new Error("Unsupported language: " + language.name);
@@ -131,9 +131,11 @@ async function main() {
 
   const grammarTemplatesDir = path.join(__dirname, 'grammars');
   const files = await fs.readdir(grammarTemplatesDir);
-  var file = files[1];
-  for (const file of files) {
-    await generateGrammar(apiDocs, file, grammarTemplatesDir);
+  
+  try {
+    await Promise.all(files.map(file => generateGrammar(apiDocs, file, grammarTemplatesDir)));
+  } catch (e) {
+    throw new Error(e);
   }
 }
 
