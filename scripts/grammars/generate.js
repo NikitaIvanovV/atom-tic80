@@ -138,6 +138,5 @@ async function main() {
 
 if (require.main === module) {
   console.log("Generating grammars...");
-  main();
-  console.log("Done!");
+  main().then(() => console.log("Done!"));
 }
