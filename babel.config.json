@@ -1,4 +1,5 @@
 {
+  "plugins": ["dedent"],
   "presets": ["@babel/preset-env"],
   "sourceMaps": "inline"
 }
