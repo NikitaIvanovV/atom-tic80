@@ -27,7 +27,10 @@
     "cson": "^7.19.0"
   },
   "package-deps": [
-    "language-lua"
+    "language-lua",
+    "language-moonscript",
+    "language-wren",
+    "language-squirrel"
   ],
   "providedServices": {
     "autocomplete.provider": {
