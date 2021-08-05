@@ -1,10 +1,24 @@
 import cson from 'cson';
 import fs from 'fs/promises';
 import path from 'path';
+import { APIDocs } from '../../lib/api-docs/api-docs';
 import ticLanguages from '../../lib/languages';
 
 
 const rootPath = path.join(__dirname, '..', '..');
+
+
+class APIDocsGrammar extends APIDocs {
+  get objects() {
+    if (this._objects !== undefined) {
+      return this._objects;
+    }
+    
+    const objects = super.objects.filter(value => value.type === 'function');
+    this._objects = objects;
+    return this._objects;
+  }
+}
 
 function changeExtension(file, extension) {
   const basename = path.basename(file, path.extname(file))
@@ -17,23 +31,6 @@ function getCSONFile(path) {
     throw new Error(object);
   }
   return object;
-}
-
-function getApiDocs(path) {
-  const apiDocs = getCSONFile(path);
-  
-  var entries = Object.entries(apiDocs);
-  for (const [key, entry] of entries) {
-    if (entry.type === undefined) {
-      entry.type = 'function';
-      continue;
-    }
-    if (entry.type !== 'function') {
-      delete apiDocs[key];
-    }
-  }
-  
-  return apiDocs;
 }
 
 function getLanguageFromGrammarFile(fileName) {
@@ -54,15 +51,15 @@ async function saveGrammarFile(object, grammarPath) {
   return string;
 }
 
-function getFunctionMatchObject(name, apiEntry, language) {
+function getFunctionMatchObject(apiObject, language) {
   var object = {};
   switch (language) {
     case ticLanguages.Lua:
-      object.match = String.raw`\b(${name})\b(?=\s*(?:[({"\']|\[\[))`;
+      object.match = String.raw`\b(${apiObject.name})\b(?=\s*(?:[({"\']|\[\[))`;
       break;
     case ticLanguages.JavaScript:
     case ticLanguages.Squirrel:
-      object.match = String.raw`(?<!\.)(\b${name})(?=\s*\()`
+      object.match = String.raw`(?<!\.)(\b${apiObject.name})(?=\s*\()`
       break;
     default:
       throw new Error("Unsupported language: " + language.name);
@@ -75,10 +72,10 @@ function generateAPIFunctionsGrammar(patterns, apiDocs, language) {
     case ticLanguages.Lua:
     case ticLanguages.JavaScript:
     case ticLanguages.Squirrel:
-      for (const [name, apiEntry] of Object.entries(apiDocs)) {
+      for (const apiObject of apiDocs.objects) {
         patterns.push({
-          name: `support.function.library.${language.ticName}.tic80.${name}`,
-          ...getFunctionMatchObject(name, apiEntry, language)
+          name: `support.function.library.${language.ticName}.tic80.${apiObject.name}`,
+          ...getFunctionMatchObject(apiObject, language)
         });
       }
       break;
@@ -127,7 +124,7 @@ async function generateGrammar(apiDocs, fileName, dir) {
 async function main() {
   const apiDocsPath = path.join(rootPath, 'lib', 'api-docs.cson');
 
-  const apiDocs = getApiDocs(apiDocsPath);
+  const apiDocs = new APIDocsGrammar;
 
   const grammarTemplatesDir = path.join(__dirname, 'grammars');
   const files = await fs.readdir(grammarTemplatesDir);
