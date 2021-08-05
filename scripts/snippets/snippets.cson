@@ -1,0 +1,5 @@
+'.source.lua':
+
+  'Increment':
+    prefix: 'inc'
+    body: '${1:var} = ${1:var} + ${2:1}'

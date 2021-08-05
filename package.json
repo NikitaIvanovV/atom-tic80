@@ -17,7 +17,8 @@
   },
   "scripts": {
     "generate-grammars": "babel-node scripts/grammars/generate.js",
-    "update-docs": "npm run generate-grammars"
+    "generate-snippets": "babel-node scripts/snippets/generate.js",
+    "update-docs": "npm run generate-grammars && npm run generate-snippets"
   },
   "dependencies": {
     "atom-message-panel": ">=1.3.1",
@@ -49,6 +50,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/node": "^7.14.9",
-    "@babel/preset-env": "^7.14.9"
+    "@babel/preset-env": "^7.14.9",
+    "babel-plugin-dedent": "^2.1.0"
   }
 }
