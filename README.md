@@ -1,6 +1,6 @@
 # atom-tic80
 
-<big>Make and run [TIC-80](https://tic80.com/) games in [Atom](https://atom.io/)</big>
+<big>Make and run <a href="https://tic80.com/">TIC-80</a> games in <a href="https://atom.io/">Atom</a></big>
 
 ----
 
@@ -11,10 +11,30 @@
 
 ![Showcase](https://user-images.githubusercontent.com/51688199/91285388-96dee980-e7a6-11ea-840f-44fee158a08a.gif)
 
+## Table of Contents
+
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+  * [Run](#run)
+  * [Run file](#run-file)
+    * [Running code files](#running-code-files)
+    * [Running .tic files](#running-tic-files)
+  * [Project](#project)
+  * [Terminal](#terminal)
+  * [Autocomplete, snippets and highlighting](#autocomplete-snippets-and-highlighting)
+* [Changelog](#changelog)
+* [License](#license)
+
 ## Requirements
 * TIC-80: **0.90.0 and above**
-  * In order to get benefit from all the package features, you need to have [TIC-80 Pro Version](https://github.com/nesbox/TIC-80#pro-version)
-* Atom package [`atom-ide-datatip`](https://atom.io/packages/atom-ide-datatip)
+  * In order to get benefit from all the package features, you need to have [TIC-80 PRO Version](https://github.com/nesbox/TIC-80#pro-version)
+* Atom package to support a scripting language of your choice
+  * [`language-lua`](https://atom.io/packages/language-lua)
+  * [`language-moonscript`](https://atom.io/packages/language-moonscript)
+  * [`language-squirrel`](https://atom.io/packages/language-squirrel)
+  * [`language-wren`](https://atom.io/packages/language-wren)
+* Atom package [`atom-ide-datatip`](https://atom.io/packages/atom-ide-datatip) for [datatips](#datatips)
 
 ## Installation
 
@@ -38,7 +58,7 @@ Try out the command: if it fails, go to the package settings and set proper path
 
 ### Run file
 
-#### Running raw code files
+#### Running code files
 
 Using `Tic80: Run File` you can make your games right in Atom! Write some code, save it as .lua file (or .js or whatever TIC-80 supports) and press `Ctrl+R` (the command has a handy keybinding!).
 
@@ -50,7 +70,7 @@ The same command can also run `.tic` files. However, it's not recommended to edi
 
 ### Project
 
-As an additional feature, with `Tic80: Create Project` command you can pick a folder, choose a language and create a cart in it. The created file will be opened in a new window.
+As an additional feature, with `Tic80: Create Project` command you can pick a folder, choose a language and create a cart in it. The file will be opened in a new window.
 
 ### Terminal
 
@@ -58,16 +78,23 @@ The package can print TIC-80 console output to a terminal within Atom. You can t
 
 ![Terminal](https://user-images.githubusercontent.com/51688199/91285403-9b0b0700-e7a6-11ea-9533-67eecaf708c2.png)
 
+### Autocomplete, datatips, snippets and highlighting
 
-### Autocomplete, snippets and highlighting
+The package also includes some neat features that might make the game creation process a little bit easier.
 
-The package also includes autocomplete feature for TIC's API and some handy snippets + highlighting.
+Note: these features function only if you have your current file grammar set to TIC-80 version. It's done to prevent them from working in regular code when you don't actually make games for TIC-80. Usually the grammar is set automatically but if it's not, just [set it yourself](https://flight-manual.atom.io/using-atom/sections/grammar/).
+
+![Set Tic-80 grammar manually](https://user-images.githubusercontent.com/51688199/128045487-32145331-ff07-47ee-a411-1937f4d4d63a.png)
+
+#### Autocomplete
+
+Start typing any function from TIC's API and Atom will autocomplete it for you.
 
 ![Autocomplete](https://user-images.githubusercontent.com/51688199/91285376-95152600-e7a6-11ea-930d-e2aabddad208.png)
 
-Note: they work only if you have your current file grammar set to TIC-80 version. It's done to prevent those things from appearing in regular code when you don't actually make games for TIC-80. Usually the grammar is set automatically but if it's not, just [set it yourself](https://flight-manual.atom.io/using-atom/sections/grammar/).
+#### Datatips
 
-![Set Tic-80 grammar](https://user-images.githubusercontent.com/51688199/128045487-32145331-ff07-47ee-a411-1937f4d4d63a.png)
+Hover your mouse over any TIC-80 API function and you will see its description and parameters.
 
 ## Changelog
 
