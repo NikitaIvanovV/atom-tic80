@@ -36,6 +36,13 @@
       }
     }
   },
+  "consumedServices": {
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatips"
+      }
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/node": "^7.14.9",

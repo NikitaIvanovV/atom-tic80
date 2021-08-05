@@ -78,11 +78,23 @@ terminal:
       order: 7
 
 autocomplete:
+  description: 'Autocomplete feature for TIC-80 API.'
   type: 'object'
   order: 4
   properties:
     enabled:
       title: 'Enable'
-      description: 'Autocomplete feature for TIC-80 API. This setting will take effect after restarting.'
+      description: 'This setting will take effect after restarting.'
+      type: 'boolean'
+      default: true
+
+datatips:
+  description: 'Datatips show TIC-80 API description on mouse hover.'
+  type: 'object'
+  order: 5
+  properties:
+    enabled:
+      title: 'Enable'
+      description: 'This setting will take effect after restarting.'
       type: 'boolean'
       default: true
