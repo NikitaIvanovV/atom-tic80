@@ -2,10 +2,10 @@ scopeName: 'source.lua.tic80'
 name: 'Lua TIC-80'
 fileTypes: ['lua']
 injections:
-  'L:source.lua':
+  'L:source.lua - (comment | string)':
     patterns: [
       {
-        'include': '#api'
+        include: '#api'
       }
     ]
 patterns: [

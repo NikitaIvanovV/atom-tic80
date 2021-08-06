@@ -2,10 +2,10 @@ scopeName: 'source.nut.tic80'
 name: 'Squirrel TIC-80'
 fileTypes: ['nut']
 injections:
-  'L:source.nut':
+  'L:source.nut - (comment | string)':
     patterns: [
       {
-        'include': '#api'
+        include: '#api'
       }
     ]
 patterns: [

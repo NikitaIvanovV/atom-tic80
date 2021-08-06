@@ -2,10 +2,10 @@ scopeName: 'source.moon.tic80'
 name: 'MoonScript TIC-80'
 fileTypes: ['moon']
 injections:
-  'L:source.moon':
+  'L:source.moon - (comment | string)':
     patterns: [
       {
-        'include': '#api'
+        include: '#api'
       }
     ]
 patterns: [

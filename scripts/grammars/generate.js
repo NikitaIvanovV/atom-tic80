@@ -61,6 +61,12 @@ function getFunctionMatchObject(apiObject, language) {
     case ticLanguages.Squirrel:
       object.match = String.raw`(?<!\.)(\b${apiObject.name})(?=\s*\()`
       break;
+    case ticLanguages.Moon:
+      object.match = String.raw`@?${apiObject.name}(?=\(|!|[ ]+("|'|\{|-?(?!if|then|else|elseif|export|import|from|and|or|not|with|for|in|while|return|unless|continue|break|local)\w+))`;
+      break;
+    case ticLanguages.Wren:
+      object.match = String.raw`(${apiObject.name})(?=\s*\()`;
+      break;
     default:
       throw new Error("Unsupported language: " + language.name);
   }
@@ -71,17 +77,15 @@ function generateAPIFunctionsGrammar(patterns, apiDocs, language) {
   switch (language) {
     case ticLanguages.Lua:
     case ticLanguages.JavaScript:
+    case ticLanguages.Moon:
     case ticLanguages.Squirrel:
+    case ticLanguages.Wren:
       for (const apiObject of apiDocs.objects) {
         patterns.push({
           name: `support.function.library.${language.ticName}.tic80.${apiObject.name}`,
           ...getFunctionMatchObject(apiObject, language)
         });
       }
-      break;
-    case ticLanguages.Moon:
-    case ticLanguages.Wren:
-      // Don't add grammars for Moon and Wren
       break;
     default:
       throw new Error("Unsupported language: " + language.name);
