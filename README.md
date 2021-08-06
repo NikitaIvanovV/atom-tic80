@@ -29,14 +29,9 @@
 * [License](#license)
 
 ## Requirements
-1. TIC-80: **0.90.0 and above**
-2. [TIC-80 PRO Version](https://github.com/nesbox/TIC-80#pro-version) to be able to [create](#project) and [run](#running-code-files) code files
-3. Atom package to use a scripting language of your choice
-  * [`language-lua`](https://atom.io/packages/language-lua)
-  * [`language-moonscript`](https://atom.io/packages/language-moonscript)
-  * [`language-squirrel`](https://atom.io/packages/language-squirrel)
-  * [`language-wren`](https://atom.io/packages/language-wren)
-4. Atom package [`atom-ide-datatip`](https://atom.io/packages/atom-ide-datatip) for [datatips](#datatips)
+
+* TIC-80: **0.90.0 and above**
+* [TIC-80 PRO Version](https://github.com/nesbox/TIC-80#pro-version) to be able to [create](#project) and [run](#running-code-files) code files
 
 ## Installation
 
