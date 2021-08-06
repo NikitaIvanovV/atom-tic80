@@ -14,16 +14,27 @@ tic80:
       title: 'Start in fullscreen mode'
       type: 'boolean'
       default: false
+      order: 1
     restart:
       title: 'Restart'
       description: "If TIC-80 is already running and one attempts to run another instance, the old process is terminated."
       type: 'boolean'
       default: true
+      order: 2
     skipStartUpAnimation:
       title: 'Skip Start Up animation'
       description: 'Note that running cart and code files always skips it.'
       type: 'boolean'
       default: true
+      order: 3
+    arguments:
+      title: 'Additional command line arguments'
+      description: 'Separate them by comma'
+      type: 'array'
+      default: []
+      items:
+        type: 'string'
+      order: 4
 
 terminal:
   type: 'object'
@@ -75,6 +86,7 @@ terminal:
         'left'
         'right'
       ]
+      radio: true
       order: 7
 
 autocomplete:
