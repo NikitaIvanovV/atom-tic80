@@ -86,7 +86,7 @@ The package also includes some neat features that might make the game creation p
 
 Note: these features function only if you have your current file grammar set to TIC-80 version. It's done to prevent them from working in regular code when you don't actually make games for TIC-80. Usually the grammar is set automatically but if it's not, just [set it yourself](https://flight-manual.atom.io/using-atom/sections/grammar/).
 
-![Set Tic-80 grammar manually](https://user-images.githubusercontent.com/51688199/128045487-32145331-ff07-47ee-a411-1937f4d4d63a.png)
+![Set Tic-80 grammar manually](https://user-images.githubusercontent.com/51688199/128466339-0c3876f1-d4c1-48ab-a890-98c4bb43708d.png)
 
 #### Autocomplete
 
