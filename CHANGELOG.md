@@ -1,3 +1,8 @@
+## 1.0.1
+
+* Raise an error if a user attempts to run a non-existent file
+
+
 ## 1.0.0
 
 * Added compatibility for TIC-80 0.90.0 and above. Unfortunately, due   to how command line arguments are passed in the new version, the package is no longer compatible with older versions of TIC.
