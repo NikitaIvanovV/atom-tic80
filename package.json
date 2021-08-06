@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "1.0.0",
   "name": "atom-tic80",
   "main": "./lib/atom-tic80",
   "description": "Make and run TIC-80 games in Atom",
@@ -28,13 +28,25 @@
     "cson": "^7.19.0"
   },
   "package-deps": [
-    {"name": "language-lua"},
-    {"name": "language-moonscript"},
-    {"name": "language-wren"},
-    {"name": "language-squirrel"},
+    {
+      "name": "language-lua"
+    },
+    {
+      "name": "language-moonscript"
+    },
+    {
+      "name": "language-wren"
+    },
+    {
+      "name": "language-squirrel"
+    },
     [
-      {"name": "atom-ide-datatip"},
-      {"name": "atom-ide-ui"}
+      {
+        "name": "atom-ide-datatip"
+      },
+      {
+        "name": "atom-ide-ui"
+      }
     ]
   ],
   "providedServices": {
