@@ -1,6 +1,6 @@
 ## 1.0.0
 
-* Added compatibility for TIC-80 0.90.0 and above. Unfortunetely, due   to how command line arguments are passed in the new version, the package is no longer compatible with older versions of TIC.
+* Added compatibility for TIC-80 0.90.0 and above. Unfortunately, due   to how command line arguments are passed in the new version, the package is no longer compatible with older versions of TIC.
 * Added complete support for all the languages (except for Fennel)
 * Added unique grammars for every language (e.g. `Lua TIC-80`, `JavaScript TIC-80`) to support [datatips for the API](https://github.com/ViChyavIn/atom-tic80/tree/5f8bab452c853436cc962668bd1bb9f1d393ad98#datatips) and syntax highlighting and improve autocompletion and snippets
 * Added API documentation for new 0.90.0 functions
