@@ -6,8 +6,7 @@
 
 * Allows you to run and make games within Atom
 * Prints TIC's console output in Atom's terminal
-* Provides autocomplete, syntax and snippets for TIC's API
-* highlights some syntax
+* Provides autocompletion, datatips, syntax highlighting and snippets for TIC's API
 
 ![Showcase](https://user-images.githubusercontent.com/51688199/91285388-96dee980-e7a6-11ea-840f-44fee158a08a.gif)
 
